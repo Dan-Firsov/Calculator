@@ -1,0 +1,186 @@
+@import "nullstyle.scss";
+
+body {
+  background-color: #ebd8c9;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.header {
+  color: white;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 30px;
+  background-color: #241b1c;
+  border-radius: 15px;
+  align-self: flex-start;
+  padding: 5px;
+}
+.cal {
+  width: 450px;
+  height: 550px;
+  align-self: center;
+  background-color: #da8a46;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 20px black;
+  user-select: none;
+
+  .cal__face {
+    width: 80%;
+    height: 25%;
+    margin: 10% auto;
+    border-radius: 20px;
+    background-color: #241b1c;
+
+    .cal__input {
+      text-align: right;
+      color: wheat;
+      background-color: rgba($color: #000000, $alpha: 0);
+      font-size: 4em;
+      padding: 0 0 20px 0;
+      margin: 10%;
+      width: 80%;
+      height: 60%;
+      align-self: center;
+      letter-spacing: 1.5px;
+    }
+  }
+  .cal__button {
+    height: 50%;
+    margin: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 45px);
+    align-content: space-between;
+    justify-content: space-between;
+    .num {
+      background-color: #e0d5be;
+    }
+    .num:hover {
+      background-color: #d1c7b2;
+    }
+    .num:active {
+      background-color: #aba391;
+    }
+    .cancel {
+      background-color: #c7495c;
+    }
+    .cancel:hover {
+      background-color: #b54354;
+    }
+    .cancel:active {
+      background-color: #a13b4b;
+    }
+    .operations {
+      background-color: #c9d46c;
+    }
+    .operations:hover {
+      background-color: #bbc464;
+    }
+    .operations:active {
+      background-color: #aab35b;
+    }
+
+    .cal__buttons {
+      font-size: 25px;
+      border-radius: 30px;
+      box-shadow: 0px 3px 7px black;
+    }
+    .cal__buttons:active {
+      box-shadow: none;
+      position: relative;
+      top: 3px;
+    }
+    .grid_1 {
+      grid-row-start: 4;
+      grid-column-start: 1;
+    }
+    .grid_2 {
+      grid-row-start: 4;
+      grid-column-start: 2;
+    }
+    .grid_3 {
+      grid-row-start: 4;
+      grid-column-start: 3;
+    }
+    .grid_4 {
+      grid-row-start: 3;
+      grid-column-start: 1;
+    }
+    .grid_5 {
+      grid-row-start: 3;
+      grid-column-start: 2;
+    }
+    .grid_6 {
+      grid-row-start: 3;
+      grid-column-start: 3;
+    }
+    .grid_7 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+    .grid_8 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+    .grid_9 {
+      grid-row-start: 2;
+      grid-column-start: 3;
+    }
+    .grid_0 {
+      grid-row-start: 5;
+      grid-column-start: 1;
+      grid-row-end: 5;
+      grid-column-end: span 2;
+    }
+    .grid_dot {
+      grid-row-start: 5;
+      grid-column-start: 3;
+    }
+    .grid_plus {
+      grid-row-start: 2;
+      grid-column-start: 4;
+    }
+    .grid_min {
+      grid-row-start: 3;
+      grid-column-start: 4;
+    }
+    .grid_mul {
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+    .grid_div {
+      grid-row-start: 1;
+      grid-column-start: 4;
+    }
+    .grid_c {
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+    .grid_ce {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+    .grid_eq {
+      grid-row-start: 4;
+      grid-column-start: 4;
+      grid-row-end: span5;
+      grid-column-end: 5;
+      background-color: #ea592a;
+    }
+    .grid_eq:hover {
+      background-color: #e8592a;
+    }
+    .grid_eq:hover {
+      background-color: #c24b23;
+    }
+  }
+}

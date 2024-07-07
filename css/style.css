@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*---------------*/
+body {
+  background-color: #ebd8c9;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  margin: 20px auto;
+  font-size: 30px;
+  background-color: #241b1c;
+  border-radius: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 5px;
+}
+
+.cal {
+  width: 450px;
+  height: 550px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #da8a46;
+  border-radius: 20px;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 20px black;
+          box-shadow: 0px 0px 20px black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.cal .cal__face {
+  width: 80%;
+  height: 25%;
+  margin: 10% auto;
+  border-radius: 20px;
+  background-color: #241b1c;
+}
+.cal .cal__face .cal__input {
+  text-align: right;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 4em;
+  padding: 0 0 20px 0;
+  margin: 10%;
+  width: 80%;
+  height: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 1.5px;
+}
+.cal .cal__button {
+  height: 50%;
+  margin: 10%;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (70px)[4];
+  grid-template-columns: repeat(4, 70px);
+  -ms-grid-rows: (45px)[5];
+  grid-template-rows: repeat(5, 45px);
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cal .cal__button > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.cal .cal__button > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.cal .cal__button > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.cal .cal__button > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.cal .cal__button > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.cal .cal__button > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.cal .cal__button > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.cal .cal__button > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+.cal .cal__button > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.cal .cal__button > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.cal .cal__button > *:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.cal .cal__button > *:nth-child(12) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+.cal .cal__button > *:nth-child(13) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+.cal .cal__button > *:nth-child(14) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+.cal .cal__button > *:nth-child(15) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+}
+.cal .cal__button > *:nth-child(16) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+}
+.cal .cal__button > *:nth-child(17) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.cal .cal__button > *:nth-child(18) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+.cal .cal__button > *:nth-child(19) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.cal .cal__button > *:nth-child(20) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+}
+.cal .cal__button .num {
+  background-color: #e0d5be;
+}
+.cal .cal__button .num:hover {
+  background-color: #d1c7b2;
+}
+.cal .cal__button .num:active {
+  background-color: #aba391;
+}
+.cal .cal__button .cancel {
+  background-color: #c7495c;
+}
+.cal .cal__button .cancel:hover {
+  background-color: #b54354;
+}
+.cal .cal__button .cancel:active {
+  background-color: #a13b4b;
+}
+.cal .cal__button .operations {
+  background-color: #c9d46c;
+}
+.cal .cal__button .operations:hover {
+  background-color: #bbc464;
+}
+.cal .cal__button .operations:active {
+  background-color: #aab35b;
+}
+.cal .cal__button .cal__buttons {
+  font-size: 25px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 3px 7px black;
+          box-shadow: 0px 3px 7px black;
+}
+.cal .cal__button .cal__buttons:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+.cal .cal__button .grid_1 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+.cal .cal__button .grid_2 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+.cal .cal__button .grid_3 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+.cal .cal__button .grid_4 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+.cal .cal__button .grid_5 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+.cal .cal__button .grid_6 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+.cal .cal__button .grid_7 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+.cal .cal__button .grid_8 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+.cal .cal__button .grid_9 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+.cal .cal__button .grid_0 {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row-span: 0;
+  grid-row-end: 5;
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
+}
+.cal .cal__button .grid_dot {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+.cal .cal__button .grid_plus {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+.cal .cal__button .grid_min {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+.cal .cal__button .grid_mul {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+.cal .cal__button .grid_div {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+.cal .cal__button .grid_c {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+.cal .cal__button .grid_ce {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+.cal .cal__button .grid_eq {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row-span: span5;
+  grid-row-end: span5;
+  -ms-grid-column-span: 1;
+  grid-column-end: 5;
+  background-color: #ea592a;
+}
+.cal .cal__button .grid_eq:hover {
+  background-color: #e8592a;
+}
+.cal .cal__button .grid_eq:hover {
+  background-color: #c24b23;
+}
